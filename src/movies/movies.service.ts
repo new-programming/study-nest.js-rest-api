@@ -5,6 +5,8 @@ import { Movie } from './entities/movie.entity';
 
 @Injectable()
 export class MoviesService {
+    
+    // DBがないからmemory上で保存します
     private movies: Movie[] = [];
 
     getAll(): Movie[] {
